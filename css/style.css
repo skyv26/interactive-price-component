@@ -52,6 +52,10 @@ h6 span {
   width: 100%;
 }
 
+h3, h4, h5 {
+  font-size: 0;
+}
+
 body {
   width: 100%;
   max-width: 1440px;
@@ -313,8 +317,8 @@ body {
 }
 .price-section > .slider {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: #a5f3eb;
   cursor: pointer;
   border-radius: 1rem;
@@ -325,12 +329,27 @@ body {
 }
 .price-section > .slider::-webkit-slider-thumb {
   background: url("../images/icon-slider.svg") no-repeat center;
+  -moz-appearance: none;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin-top: -0.25rem;
   /* Centers thumb on the track */
   background-color: #10d5c2;
   border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  box-shadow: 0 8px 30px 10px rgba(16, 213, 194, 0.3);
+}
+.price-section > .slider::-moz-range-thumb {
+  background: url("../images/icon-slider.svg") no-repeat center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -0.25rem;
+  /* Centers thumb on the track */
+  background-color: #10d5c2;
+  border-radius: 50%;
+  border-color: #10d5c2;
   height: 3.5rem;
   width: 3.5rem;
   box-shadow: 0 8px 30px 10px rgba(16, 213, 194, 0.3);
@@ -362,6 +381,10 @@ body {
     height: 4rem;
     width: 4rem;
   }
+  .price-section > .slider::-moz-range-thumb {
+    height: 4rem;
+    width: 4rem;
+  }
   .price-section .price {
     font-size: 1.25rem;
   }
@@ -379,6 +402,10 @@ body {
     font-size: 1.4rem;
   }
   .price-section > .slider::-webkit-slider-thumb {
+    height: 4.1rem;
+    width: 4.1rem;
+  }
+  .price-section > .slider::-moz-range-thumb {
     height: 4.1rem;
     width: 4.1rem;
   }
@@ -402,6 +429,10 @@ body {
     height: 1rem;
   }
   .price-section > .slider::-webkit-slider-thumb {
+    height: 4.75rem;
+    width: 4.75rem;
+  }
+  .price-section > .slider::-moz-range-thumb {
     height: 4.75rem;
     width: 4.75rem;
   }
@@ -434,6 +465,13 @@ body {
     height: 0.6rem;
   }
   .price-section > .slider::-webkit-slider-thumb {
+    margin-top: -0.25rem;
+    /* Centers thumb on the track */
+    height: 3.5rem;
+    width: 3.5rem;
+    box-shadow: 0 8px 30px 10px rgba(16, 213, 194, 0.3);
+  }
+  .price-section > .slider::-moz-range-thumb {
     margin-top: -0.25rem;
     /* Centers thumb on the track */
     height: 3.5rem;
@@ -481,6 +519,13 @@ body {
     width: 3.75rem;
     box-shadow: 0 8px 30px 10px rgba(16, 213, 194, 0.3);
   }
+  .price-section > .slider::-moz-range-thumb {
+    margin-top: -0.05rem;
+    /* Centers thumb on the track */
+    height: 3.75rem;
+    width: 3.75rem;
+    box-shadow: 0 8px 30px 10px rgba(16, 213, 194, 0.3);
+  }
   .price-section .price {
     display: flex;
     width: auto;
@@ -520,6 +565,13 @@ body {
     height: 0.9rem;
   }
   .price-section > .slider::-webkit-slider-thumb {
+    margin-top: 0.2rem;
+    /* Centers thumb on the track */
+    height: 3.85rem;
+    width: 3.85rem;
+    box-shadow: 0 8px 30px 10px rgba(16, 213, 194, 0.3);
+  }
+  .price-section > .slider::-moz-range-thumb {
     margin-top: 0.2rem;
     /* Centers thumb on the track */
     height: 3.85rem;

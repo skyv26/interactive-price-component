@@ -16,9 +16,9 @@ body {
     background-position: top 8.75% center, top -19% left 0;
   }
 
-    @media screen and (min-width: 24em) {
-      background-position: top 8.75% center, top -19% left 0;
-    }
+  @media screen and (min-width: 24em) {
+    background-position: top 8.75% center, top -19% left 0;
+  }
 
   @media (min-width: 26.5em) {
     background-position: top 8.75% center, top -19% left 0;
@@ -179,7 +179,7 @@ body {
       font-size: $bfont-size * 2.5;
     }
     h2 {
-      margin-top: -.25rem;
+      margin-top: -0.25rem;
       font-size: $bfont-size * 1.35;
       span {
         display: inline-block;
@@ -220,7 +220,6 @@ body {
   width: 100%;
   box-shadow: 0 1rem 20px 10px rgba($text-color, 0.25);
 
-
   @media (min-width: 36em) {
     border-radius: 1rem;
   }
@@ -242,6 +241,8 @@ body {
   }
 
   & > .slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     background: hsl(174, 77%, 80%);
     cursor: pointer;
@@ -254,6 +255,9 @@ body {
 
     &::-webkit-slider-thumb {
       background: url("../images/icon-slider.svg") no-repeat center;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+
       appearance: none;
       margin-top: -0.25rem; /* Centers thumb on the track */
       background-color: $slider-bg;
@@ -261,6 +265,22 @@ body {
       height: 3.5rem;
       width: 3.5rem;
       box-shadow: 0 8px 30px 10px rgba($slider-bg, 0.3);
+    }
+
+    &::-moz-range-thumb {
+      background: url("../images/icon-slider.svg") no-repeat center;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+
+      appearance: none;
+      margin-top: -0.25rem; /* Centers thumb on the track */
+      background-color: $slider-bg;
+      border-radius: 50%;
+      border-color: $slider-bg;
+      height: 3.5rem;
+      width: 3.5rem;
+      box-shadow: 0 8px 30px 10px rgba($slider-bg, 0.3);
+
     }
   }
 
@@ -292,6 +312,10 @@ body {
         height: 4rem;
         width: 4rem;
       }
+      &::-moz-range-thumb {
+        height: 4rem;
+        width: 4rem;
+      }
     }
     .price {
       font-size: $bfont-size * 1.25;
@@ -310,6 +334,10 @@ body {
     }
     & > .slider {
       &::-webkit-slider-thumb {
+        height: 4.1rem;
+        width: 4.1rem;
+      }
+      &::-moz-range-thumb {
         height: 4.1rem;
         width: 4.1rem;
       }
@@ -332,6 +360,10 @@ body {
     & > .slider {
       height: 1rem;
       &::-webkit-slider-thumb {
+        height: 4.75rem;
+        width: 4.75rem;
+      }
+      &::-moz-range-thumb {
         height: 4.75rem;
         width: 4.75rem;
       }
@@ -365,6 +397,13 @@ body {
       height: 0.6rem;
 
       &::-webkit-slider-thumb {
+        margin-top: -0.25rem; /* Centers thumb on the track */
+        height: 3.5rem;
+        width: 3.5rem;
+        box-shadow: 0 8px 30px 10px rgba($slider-bg, 0.3);
+      }
+
+      &::-moz-range-thumb {
         margin-top: -0.25rem; /* Centers thumb on the track */
         height: 3.5rem;
         width: 3.5rem;
@@ -414,6 +453,12 @@ body {
         width: 3.75rem;
         box-shadow: 0 8px 30px 10px rgba($slider-bg, 0.3);
       }
+      &::-moz-range-thumb {
+        margin-top: -0.05rem; /* Centers thumb on the track */
+        height: 3.75rem;
+        width: 3.75rem;
+        box-shadow: 0 8px 30px 10px rgba($slider-bg, 0.3);
+      }
     }
 
     .price {
@@ -422,16 +467,15 @@ body {
       grid-area: price;
       font-size: $bfont-size * 1.4;
       letter-spacing: 1px;
-      margin:0;
+      margin: 0;
       align-items: center;
       justify-content: center;
       gap: 0.6rem;
 
       span {
         font-size: $bfont-size * 3.75;
-        letter-spacing: -.75px;
+        letter-spacing: -0.75px;
         margin: 0;
-        
       }
     }
   }
@@ -455,9 +499,15 @@ body {
       width: 44rem;
       grid-area: slider;
       margin: auto;
-      height: .9rem;
+      height: 0.9rem;
 
       &::-webkit-slider-thumb {
+        margin-top: 0.2rem; /* Centers thumb on the track */
+        height: 3.85rem;
+        width: 3.85rem;
+        box-shadow: 0 8px 30px 10px rgba($slider-bg, 0.3);
+      }
+      &::-moz-range-thumb {
         margin-top: 0.2rem; /* Centers thumb on the track */
         height: 3.85rem;
         width: 3.85rem;
@@ -471,17 +521,16 @@ body {
       grid-area: price;
       font-size: $bfont-size * 1.4;
       letter-spacing: 1px;
-      margin:0;
+      margin: 0;
       align-items: center;
       justify-content: center;
       gap: 0.6rem;
 
       span {
         font-size: $bfont-size * 4.1;
-        letter-spacing: -.2px;
+        letter-spacing: -0.2px;
         margin: 0;
-        margin-top: -.1rem
-        
+        margin-top: -0.1rem;
       }
     }
   }
@@ -922,7 +971,6 @@ body {
     width: 100%;
     margin-bottom: 0.5rem;
 
-
     .list {
       align-items: flex-start;
       width: 35.5%;
@@ -959,7 +1007,6 @@ body {
     padding: 2.6rem 1.25rem;
     width: 100%;
     margin-bottom: 0.85rem;
-
 
     .list {
       align-items: flex-start;
@@ -1019,5 +1066,4 @@ body {
     margin: 8rem 0;
     height: 5.8rem;
   }
-  
 }
