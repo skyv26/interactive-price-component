@@ -295,6 +295,7 @@ body {
     span {
       font-size: $bfont-size * 2.85;
       font-weight: 800;
+      color: $main-text-color;
       letter-spacing: -1px;
       margin-right: 1rem;
     }
@@ -674,6 +675,7 @@ body {
     font-weight: normal;
     margin: auto;
     margin-top: 1.25rem;
+    color: $text-color;
     transition: 0.5s;
     position: relative;
     letter-spacing: 0.1px;
@@ -814,6 +816,7 @@ body {
 .product-highlights {
   @extend .display;
   flex-direction: column;
+  color: $text-color;
   border-top: 1px solid rgba($toggle-bg, 0.4);
   gap: 2.4rem;
 

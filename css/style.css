@@ -366,6 +366,7 @@ body {
 .price-section .price span {
   font-size: 2.85rem;
   font-weight: 800;
+  color: #293356;
   letter-spacing: -1px;
   margin-right: 1rem;
 }
@@ -722,6 +723,7 @@ body {
     font-weight: normal;
     margin: auto;
     margin-top: 1.25rem;
+    color: #858fad;
     transition: 0.5s;
     position: relative;
     letter-spacing: 0.1px;
@@ -846,6 +848,7 @@ body {
 
 .product-highlights {
   flex-direction: column;
+  color: #858fad;
   border-top: 1px solid rgba(205, 215, 238, 0.4);
   gap: 2.4rem;
 }
