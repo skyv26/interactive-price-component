@@ -55,6 +55,6 @@ toggleSwitch.addEventListener("click", (e) => {
     }
     else{
         e.target.style.backgroundColor="hsl(223, 50%, 87%)";
-        priceText.textContent = (Number(slider.value * 1.00)).toFixed(2);
+        priceText.textContent = "$"+(Number(slider.value * 1.00)).toFixed(2);
     }
 })
