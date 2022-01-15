@@ -52,6 +52,7 @@ toggleSwitch.addEventListener("click", (e) => {
     let calculatedPrice=(price -((price * 25) / 100)).toFixed(2);
     if (isCheck) {
         priceText.textContent="$"+calculatedPrice;
+        e.target.style.backgroundColor="hsl(174, 86%, 45%)";
     }
     else{
         e.target.style.backgroundColor="hsl(223, 50%, 87%)";
