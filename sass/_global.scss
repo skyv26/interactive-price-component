@@ -1,0 +1,54 @@
+@import './variables';
+@import './reset-mixins';
+@import './general-mixins';
+
+*,
+*::after,
+*::before {
+    @include resetter;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    background-color: black;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+    @include ul-ol-style;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include all-headings;
+    font-size: $bfont-size;
+
+    span {
+        display: inline-block;
+    }
+}
+
+.display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 0;
+    width: 100%;
+}

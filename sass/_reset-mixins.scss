@@ -1,0 +1,9 @@
+@mixin resetter {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin ul-ol-style {
+    list-style: none;
+}

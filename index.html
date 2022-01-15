@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="main global-width">
+        <header class="header">
+          <h1>Simple, traffic-based pricing</h1>
+          <h2>
+            Sign-up for our 30-day trial.<span>No credit card required.</span>
+          </h2>
+        </header>
+        <div class="card-container">
+          <section class="price-section">
+            <p><span class="views">100K</span> Pageviews</p>
+            <input
+              type="range"
+              name="price-slider"
+              id="price-slider"
+              class="slider"
+              min="0"
+              max="32"
+              value="16"
+              step="2"
+              aria-label="select your plan"
+            />
+            <p class="price"><span>$16.00</span> / month</p>
+            <article class="billing">
+              <p>Monthly Billing</p>
+              <input
+                type="checkbox"
+                name="toggle-switch"
+                id="toggle-switch"
+                class="toggle"
+                aria-label="switch your plan"
+              />
+              <p class="billing-discount">Yearly Billing<span>25%</span></p>
+            </article>
+          </section>
+          <section class="product-highlights">
+            <ul class="list">
+              <li>
+                <img src="./images/icon-check.svg" alt="" />Unlimited websites
+              </li>
+              <li>
+                <img src="./images/icon-check.svg" alt="" />100% data ownership
+              </li>
+              <li><img src="./images/icon-check.svg" alt="" />Email reports</li>
+            </ul>
+            <button>Start my trial</button>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8" target="_blank">Frontend Mentor</a>. 
+    Made with ❤️ by <a href="https://www.frontendmentor.io/profile/skyv26" target="_blank">Aakash Verma</a>.
+  </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
