@@ -7,7 +7,7 @@ let priceText = document.querySelector(".price span");
 let views = document.getElementsByClassName("views")[0];
 let color;
 let percentageVal;
-
+let clicked=false;
 
 percentageVal = (slider.value / maxSliderValue) * 100;
 
@@ -51,11 +51,24 @@ toggleSwitch.addEventListener("click", (e) => {
     let price=priceText.textContent.split('$')[1];
     let calculatedPrice=(price -((price * 25) / 100)).toFixed(2);
     if (isCheck) {
+        clicked=true;
         priceText.textContent="$"+calculatedPrice;
         e.target.style.backgroundColor="hsl(174, 86%, 45%)";
     }
     else{
+        clicked=false;
         e.target.style.backgroundColor="hsl(223, 50%, 87%)";
         priceText.textContent = "$"+(Number(slider.value * 1.00)).toFixed(2);
     }
 })
+
+toggleSwitch.addEventListener("mouseleave", (e) => {
+    e.target.style.backgroundColor="hsl(174, 86%, 45%)";
+    if(!clicked){
+        e.target.style.backgroundColor="hsl(223, 50%, 87%)";
+    }
+})
+
+toggleSwitch.addEventListener("mouseover", (e) => {
+    e.target.style.backgroundColor="hsl(174, 86%, 45%)";
+});
